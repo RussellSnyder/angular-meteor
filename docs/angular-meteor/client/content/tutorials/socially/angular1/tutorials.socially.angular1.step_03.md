@@ -99,6 +99,10 @@ Remove it using that id (replace `N4KzMEvtm4dYvk2TF` with your party's id value)
 
     db.parties.remove( {"_id": "N4KzMEvtm4dYvk2TF"});
 
+**Note** depending on your version of meteor, you may get an `ObjectID` instead of a sting of numbers.  If this is the case,  Remove it using:
+
+    db.parties.remove( {"_id": ObjectId("N4KzMEvtm4dYvk2TF")});
+
 Again, you will see the UI of your app immediately update with that party removed.
 
 Try running more actions like updating an object from the console and so on. Check out the mongodb documentation to explore <a href="http://docs.mongodb.org/manual/tutorial/getting-started-with-the-mongo-shell/">the mongodb shell</a>.
