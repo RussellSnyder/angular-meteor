@@ -1,3 +1,12 @@
+ALMOST MISSED THE TOP BAR!
+````css
+@media only screen and (min-width: 1050px) and (max-width: 1050px) {
+	.tutorial-container {
+	    padding-top: 36px;
+	}
+}
+````
+
 {{#template name="tutorials.socially.angular1.step_00.md"}}
 
 Let's start building our Meteor Angular 1 Socially app.
