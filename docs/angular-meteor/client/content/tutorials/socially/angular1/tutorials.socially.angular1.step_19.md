@@ -81,9 +81,9 @@ This solution is the most helpful solution of all - because in the end of this s
 * The package will be listed on the Atmosphere package manager and you'll be able to use it with "meteor add" command.
 * You will create a pull request to the package author in order to provide Meteor support for the package.
 
-**If you are not interested on this solution and just want to do some "monkey patch" in order to your an unlisted package - just the Solution #2.**
+**If you are not interested in this solution and just want to use some "monkey patch" as an unlisted package - you can use Solution #2.**
 
-In order to learn in this example, we will use [angularjs-dropdown-multiselect](https://github.com/dotansimha/angularjs-dropdown-multiselect) as an example for a package.
+We will use [angularjs-dropdown-multiselect](https://github.com/dotansimha/angularjs-dropdown-multiselect) as an example for a package.
 
 First, we want to fork the repository and clone it to our computer by using `git clone FORKED_REPOSITORY_LINK`.
 
