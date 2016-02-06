@@ -62,7 +62,7 @@ Notice we did 3 things:
 Now let's configure our routes.
 Add this config code in `app.js`, after the Angular 1 app has been defined:
 
-{{> DiffBox tutorialName="meteor-angular1-socially" step="5.4"}}
+-{{> DiffBox tutorialName="meteor-angular1-socially" step="5.4"}}
 
 And we will also add a state for a new page that will display the party details:
 
