@@ -23,6 +23,22 @@ Add `ng-model` to the form like this:
 
 Now each time the user types inside these inputs, the value of the newParty component variable will be automatically updated.  Conversely, if `partiesList.newParty` is changed outside of the HTML, the input values will be updated accordingly.
 
+## ng-model and ng-if for real-time preview 
+
+Now that we have bound the inputs to these variables, we can show the user what their new entry will look like *as they type it*.  This is an awesome feature of ng-model that meteor allow so easily.  By using an `ng-if`, the code will only appear if the user has infact typed anything.
+
+````html
+<ul ng-if="partiesList.newParty.name || partiesList.newParty.description">
+	<h2><i>Incoming party!</i></h2>
+	<b>-- Live preview --</b>
+	<li>
+		{{partiesList.newParty.name}}
+		<p>{{partiesList.newParty.description}}</p>
+	</li>
+</ul>
+````
+This will still not save automatically however, which is good because we don't want to save partially entered parties.  But the immediate feedback available through `ng-model` paired with `ng-if` is a cool feature of Angular1.x.x.  To save it to our `partiesList`, we need to add a click event. 
+
 ## ng-click
 
 Now let's bind a click event to the add button with Angular 1's [ng-click](https://docs.angularjs.org/api/ng/directive/ngClick) directive.
