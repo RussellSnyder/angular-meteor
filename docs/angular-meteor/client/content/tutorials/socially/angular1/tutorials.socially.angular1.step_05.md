@@ -95,7 +95,10 @@ And let's create the view for this Component in a new file:
 Now let's add a link from each party in the parties list to it's details page:
 
 {{> DiffBox tutorialName="meteor-angular1-socially" step="5.9"}}
-
+````html
+	</li>
+</ul>
+````
 Now all is in place.  Run the app and you'll notice a few things:
 
 * Click on the link in the name of a party - notice that you moved into a different view and that the party's id appears in both the browser's url and in the template.
